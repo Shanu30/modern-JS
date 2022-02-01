@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-types</title>
+</head>
+<body>
+    <button onclick="click1()" id="obj">Objects</button>
+    <button onclick="click2()" id="arr">Arrays</button>
+    <button onclick="click3()" id="str">Strings</button>
+    <button onclick="click4()" id="fun">Functions</button>
+    <button onclick="click5()" id="null">null</button>
+    <button onclick="click6()" id="num">Numbers</button>
+    <button onclick="click7()" id="undfnd">undefined</button>
+    <h1></h1>
+    <div></div>
+    <script>
+        function click1() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Object";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is non-premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It contains key-value pair";
+            let li3 = document.createElement("li");
+            li3.innerText = "Objects are mutable";
+
+            ul.append(li1,li2,li3);
+            div.append(ul);
+        }
+        function click2() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Array";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is non-premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It contains group of data, which can be accessed by their index number";
+            let li3 = document.createElement("li");
+            li3.innerText = "I array index count is started from 0";
+
+            ul.append(li1,li2,li3);
+            div.append(ul);
+        }
+        function click3() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "String";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = `string can be write within backticks or iverted commas`;
+
+            ul.append(li1,li2,li3);
+            div.append(ul);
+        }
+        function click4() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Function";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is non-premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It contains parameters and a piece of code";
+            let li3 = document.createElement("li");
+            li3.innerText = "We used to weite function when we required a repeated operation for diffrent values";
+            ul.append(li1,li2,li3);
+            div.append(ul);
+        }
+        function click5() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Null";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It means a variable declared, but no value has been assigned a value.";
+            ul.append(li1,li2,li3);
+            div.append(ul);
+        }
+        function click6() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Numbers";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It contains zero and nonzero integers";
+            ul.append(li1,li2);
+            div.append(ul);
+        }
+        function click7() {
+            let h1 = document.querySelector("h1");
+            let div = document.querySelector("div")
+            h1.innerText = "Undefined";
+            div.innerHTML = [];
+            let ul = document.createElement("ul");
+            let li1 = document.createElement("li");
+            li1.innerText = "It is premitive datatype";
+            let li2 = document.createElement("li");
+            li2.innerText = "It indicates that a variable has not been assigned a value or not decleared";
+
+            ul.append(li1,li2);
+            div.append(ul);
+        }
+    </script>
+</body>
+</html>
